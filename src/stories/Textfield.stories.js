@@ -1,9 +1,11 @@
 import React from 'react';
 import Textfield from './Textfield';
+import { withDesign } from 'storybook-addon-designs';
 
 export default {
   title: 'TextField',
   component: Textfield,
+  decorators: [withDesign],
 };
 
 // const Template = args => (
@@ -16,6 +18,14 @@ export const Primary = args => <Textfield {...args} />;
 Primary.args = {
   label: 'Primary',
   helperText: 'This is helper text',
+};
+
+Primary.parameters = {
+  design: {
+    type: 'figma',
+    url:
+      'https://www.figma.com/file/5PkkZJIl0qWjcqNOJLsya6/Text-Field-Doc-Example?node-id=0%3A1',
+  },
 };
 
 // export const Primary = Template.bind({});
