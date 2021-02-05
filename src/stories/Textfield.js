@@ -4,12 +4,14 @@ import {
   FormControl,
   FormLabel,
   FormHelperText,
+  FormErrorMessage,
 } from '@chakra-ui/react';
 
-const Textfield = ({ label, helperText }) => (
-  <FormControl id="email">
+const Textfield = ({ label, helperText, errorMessage, props }) => (
+  <FormControl id="email" {...props}>
     <FormLabel>{label}</FormLabel>
     <Input type="email" />
+    <FormErrorMessage>{errorMessage}</FormErrorMessage>
     <FormHelperText>{helperText}</FormHelperText>
   </FormControl>
 );

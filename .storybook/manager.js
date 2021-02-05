@@ -1,7 +1,7 @@
 import { addons } from '@storybook/addons';
-import { themes } from '@storybook/theming';
+import fhTheme from './fhTheme';
 
 addons.setConfig({
   panelPosition: 'right',
-  theme: themes.dark,
+  theme: fhTheme,
 });
