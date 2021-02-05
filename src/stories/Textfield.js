@@ -9,7 +9,7 @@ import {
 const Textfield = ({ label, helperText }) => (
   <FormControl id="email">
     <FormLabel>{label}</FormLabel>
-    <Input type="email" size="lg" />
+    <Input type="email" />
     <FormHelperText>{helperText}</FormHelperText>
   </FormControl>
 );
