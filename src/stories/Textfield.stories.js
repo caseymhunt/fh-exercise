@@ -16,6 +16,11 @@ Default.args = {
   isReadOnly: false,
 };
 
+export const Required = Template.bind({});
+Required.args = {
+  isRequired: true,
+};
+
 export const Invalid = Template.bind({});
 Invalid.args = {
   isInvalid: true,
@@ -27,7 +32,7 @@ ReadOnly.args = {
 };
 
 // Add the Figma design embed to each of the story types.
-const storyNames = [Default, Invalid, ReadOnly];
+const storyNames = [Default, Required, Invalid, ReadOnly];
 
 storyNames.forEach(storyName => {
   storyName.parameters = {
