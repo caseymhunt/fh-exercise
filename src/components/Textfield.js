@@ -7,6 +7,7 @@ import {
   FormErrorMessage,
   useToken,
 } from '@chakra-ui/react';
+import { InfoOutlineIcon } from '@chakra-ui/icons';
 import PropTypes from 'prop-types';
 
 const Textfield = ({
@@ -82,6 +83,7 @@ const Textfield = ({
         }}
       />
       <FormErrorMessage sx={{ color: 'firehydrant.alert.70', ...fontScale[7] }}>
+        <InfoOutlineIcon w={4} h={4} mr={1} />
         {errorMessage}
       </FormErrorMessage>
       <FormHelperText sx={{ color: 'firehydrant.grey.70', ...fontScale[7] }}>
