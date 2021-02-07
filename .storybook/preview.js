@@ -1,5 +1,6 @@
 import React from 'react';
-import { ChakraProvider, theme } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
+import { fhTheme as theme } from '../src/theme/fhTheme';
 
 export const decorators = [
   Story => (
