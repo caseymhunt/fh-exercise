@@ -8,7 +8,7 @@ import {
   useToken,
 } from '@chakra-ui/react';
 import { InfoOutlineIcon } from '@chakra-ui/icons';
-import PropTypes from 'prop-types';
+import { PropTypes } from 'prop-types';
 
 const Textfield = ({
   id,
