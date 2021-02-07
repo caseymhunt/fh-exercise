@@ -13,6 +13,7 @@ import PropTypes from 'prop-types';
 const Textfield = ({
   id,
   placeholder,
+  value,
   inputType,
   label,
   helperText,
@@ -36,9 +37,10 @@ const Textfield = ({
   };
 
   // Grab some color tokens to use in boxShadow styles
-  const [purple70, alert70] = useToken('colors', [
+  const [purple70, alert70, grey50] = useToken('colors', [
     'firehydrant.purple.70',
     'firehydrant.alert.70',
+    'firehydrant.grey.50',
   ]);
 
   return (
@@ -53,6 +55,7 @@ const Textfield = ({
         {label}
       </FormLabel>
       <Input
+        defaultValue={value}
         type={inputType}
         placeholder={placeholder}
         sx={{
@@ -79,6 +82,13 @@ const Textfield = ({
           '&:focus': {
             borderColor: 'firehydrant.alert.70',
             boxShadow: `0 0 0 3px ${alert70}`,
+          },
+        }}
+        _readOnly={{
+          border: 'none',
+          backgroundImage: `url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='4' ry='4' stroke='%238A9BB7FF' stroke-width='2' stroke-dasharray='8' stroke-dashoffset='10' stroke-linecap='round'/%3e%3c/svg%3e")`,
+          '&:focus': {
+            boxShadow: `inset 0 0 0 1px ${grey50}, 0 0 0 3px ${grey50}`,
           },
         }}
       />
@@ -108,8 +118,13 @@ Textfield.propTypes = {
     'time',
     'url',
   ]),
+  // Label and Helper Text may need to be a 'node' type
+  // in the future for more complex compositions, but for
+  // now the design only calls for text so we're going to
+  // leave it as string.
   label: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
+  value: PropTypes.string,
   helperText: PropTypes.string,
   errorMessage: PropTypes.string,
   isInvalid: PropTypes.bool,
@@ -122,6 +137,7 @@ Textfield.defaultProps = {
   inputType: 'text',
   label: 'Label',
   placeholder: null,
+  value: null,
   helperText: 'Helper text that is helpful',
   errorMessage: 'Error message',
   isInvalid: false,

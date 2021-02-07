@@ -6,6 +6,13 @@ export default {
   title: 'Text Field',
   component: Textfield,
   decorators: [withDesign],
+  parameters: {
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/5PkkZJIl0qWjcqNOJLsya6/Text-Field-Doc-Example?node-id=0%3A1',
+    },
+  },
 };
 
 const Template = args => <Textfield {...args} />;
@@ -29,17 +36,5 @@ Invalid.args = {
 export const ReadOnly = Template.bind({});
 ReadOnly.args = {
   isReadOnly: true,
+  value: 'This can be copied but not edited',
 };
-
-// Add the Figma design embed to each of the story types.
-const storyNames = [Default, Required, Invalid, ReadOnly];
-
-storyNames.forEach(storyName => {
-  storyName.parameters = {
-    design: {
-      type: 'figma',
-      url:
-        'https://www.figma.com/file/5PkkZJIl0qWjcqNOJLsya6/Text-Field-Doc-Example?node-id=0%3A1',
-    },
-  };
-});
