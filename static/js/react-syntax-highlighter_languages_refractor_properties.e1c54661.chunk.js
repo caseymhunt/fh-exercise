@@ -1,0 +1,2 @@
+(this["webpackJsonpfh-exercise"]=this["webpackJsonpfh-exercise"]||[]).push([[106],{271:function(e,s,t){"use strict";function n(e){e.languages.properties={comment:/^[ \t]*[#!].*$/m,"attr-value":{pattern:/(^[ \t]*(?:\\(?:\r\n|[\s\S])|[^\\\s:=])+?(?: *[=:] *| ))(?:\\(?:\r\n|[\s\S])|[^\\\r\n])+/m,lookbehind:!0},"attr-name":/^[ \t]*(?:\\(?:\r\n|[\s\S])|[^\\\s:=])+?(?= *[=:] *| )/m,punctuation:/[=:]/}}e.exports=n,n.displayName="properties",n.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_properties.e1c54661.chunk.js.map

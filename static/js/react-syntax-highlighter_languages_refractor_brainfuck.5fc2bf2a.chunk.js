@@ -1,0 +1,2 @@
+(this["webpackJsonpfh-exercise"]=this["webpackJsonpfh-exercise"]||[]).push([[18],{193:function(e,a,t){"use strict";function n(e){e.languages.brainfuck={pointer:{pattern:/<|>/,alias:"keyword"},increment:{pattern:/\+/,alias:"inserted"},decrement:{pattern:/-/,alias:"deleted"},branching:{pattern:/\[|\]/,alias:"important"},operator:/[.,]/,comment:/\S+/}}e.exports=n,n.displayName="brainfuck",n.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_brainfuck.5fc2bf2a.chunk.js.map
