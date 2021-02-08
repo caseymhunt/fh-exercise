@@ -18,9 +18,11 @@ export default {
 const Template = args => <Textfield {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  isInvalid: false,
-  isReadOnly: false,
+Default.args = {};
+
+export const WithHelperText = Template.bind({});
+WithHelperText.args = {
+  helperText: 'Helper text that is helpful.',
 };
 
 export const Required = Template.bind({});
