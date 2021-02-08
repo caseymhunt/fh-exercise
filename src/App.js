@@ -48,7 +48,7 @@ function App() {
         <Text mb={10}>
           If{' '}
           <Link
-            href="https://601f7495a3b7d300213a4862-juugbpzapv.chromatic.com"
+            href="https://primary--601f7495a3b7d300213a4862.chromatic.com"
             color="blue.600"
             isExternal
           >
